@@ -124,6 +124,10 @@ void connect_to_wifi(const char *ssid, const char *password) {
 }
 
 int main (){
+    
+    connect_to_wifi("SEU_SSID", "SUA_SENHA");
+
+    //mqtt_publish(client, "escola/sala1/temperatura", "26.5", strlen("26.5"), 0, 0, NULL, NULL);
 
     return 0;
 }
